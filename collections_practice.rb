@@ -44,9 +44,8 @@ def merge_data(arr1, arr2)
         hash = value.merge(data)
         end
       end
+    hash
     end
-  hash
-  
 end
 
 def find_cool(arr)

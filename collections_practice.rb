@@ -37,25 +37,16 @@ def count_elements(arr)
 #arr.uniq.map { |x| [arr.count(x), x] }
 
 def merge_data(arr1, arr2)
-<<<<<<< HEAD
   arr2[0].map do |name, value|
     hash = {}
     arr1.each do |data|
       if data[:first_name] == name
         hash = value.merge(data)
-=======
-  arr2[0].map do |name, prop_hash|
-    
-    new_prop_hash = {}
-    arr1.each do |new_attr_hash|
-      if new_attr_hash[:first_name] == name
-        new_prop_hash = prop_hash.merge(new_attr_hash)
-        binding.pry
->>>>>>> 9005ccac8cd46cb667fb17a507059e288e91ffa7
+        end
       end
     end
-    hash
-  end
+  hash
+  
 end
 
 def find_cool(arr)
